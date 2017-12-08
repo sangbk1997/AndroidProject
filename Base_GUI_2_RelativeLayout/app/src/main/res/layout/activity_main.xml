@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.base_gui_2_relativelayout.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:paddingLeft="10dp"
+       android:paddingTop="100dp"
+       android:paddingRight="10dp">
+       <EditText
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           android:hint="What's your name !"
+           android:id="@+id/name"/>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_marginTop="30dp"
+           android:layout_alignParentStart="true"
+           android:layout_below="@+id/name"
+           android:orientation="vertical"
+           android:layout_alignParentLeft="true"
+        >
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Hello, My name is Sang"
+               android:layout_marginBottom="20dp"/>
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Save"/>
+
+       </LinearLayout>
+   </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

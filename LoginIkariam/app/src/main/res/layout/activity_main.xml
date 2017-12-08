@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.loginikariam.MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Welcome to Ikariam Game "
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:textColor="#D57"
+                android:layout_marginTop="30dp"
+                android:layout_column="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Please sign in or login to play now  "
+                android:textSize="30px"
+                android:textColor="#567"
+                android:layout_marginTop="30dp"
+                android:layout_column="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="30dp">
+            <TextView
+
+                android:text="User :"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/user"
+                android:layout_marginLeft="10dp"
+                />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:text="Password :"
+            android:layout_marginLeft="10dp"/>
+         <EditText
+            android:id="@+id/pass"
+             android:layout_marginLeft="10dp"
+            />
+         </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/checked"
+                android:layout_marginTop="10dp"
+                android:text="Lưu thông tin "
+                android:layout_column="1"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/save"
+                android:textColor="#F56"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_column="1"
+                android:text="Apply"/>
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

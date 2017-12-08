@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/toast"
+        android:title="Raise Toast"
+        android:icon="@drawable/toast"/>
+    <!--android:showAsAction="always"-->
+
+
+    <!--<item android:id="@+id/back_list"-->
+    <!--android:title="Back_ListView"-->
+    <!--android:icon="@drawable/list"/>-->
+    <!--android:showAsAction="always"-->
+    <item android:id="@+id/Tang"
+        android:title="Sort_Up"
+        />
+    <item android:id="@+id/Giam"
+        android:title="Sort_Down"/>
+    <item android:id="@+id/run"
+        android:title="Run Long Task"
+        ></item>
+    <item android:id="@+id/clear"
+        android:title="Clear"></item>
+</menu>

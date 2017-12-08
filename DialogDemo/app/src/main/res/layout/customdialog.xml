@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+        <TextView android:text="Tên Sản Phẩm :"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/tensp"
+            android:layout_weight="4"
+            />
+    </TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+        <TextView android:text="Số Lượng  :"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/soluongsp"
+            android:layout_weight="4"
+           />
+    </TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp">
+        <TextView android:text="Giá sản phẩm :"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/giasp"
+            android:layout_weight="4"
+            />
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/save"
+            android:text="Apply"
+            android:layout_weight="1"
+            android:textSize="30px"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/cancel"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:textSize="30px"
+            android:textStyle="bold"/>
+    </TableRow>
+</TableLayout>

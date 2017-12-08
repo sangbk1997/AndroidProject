@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/toast"
+        android:title="Raise Toast"
+        android:icon="@drawable/toast"/>
+    <!--android:showAsAction="always"-->
+
+
+    <!--<item android:id="@+id/back_list"-->
+        <!--android:title="Back_ListView"-->
+        <!--android:icon="@drawable/list"/>-->
+    <!--android:showAsAction="always"-->
+    <item android:id="@+id/Tang"
+        android:title="Sort_Up"
+        />
+    <item android:id="@+id/Giam"
+        android:title="Sort_Down"/>
+</menu>
+<!--tao thanh progress bar -->
+<!--Phai viet thao tac dat vi tri tren layout-->
+<!--tu phien ban 6.0 khong ho tro progress bar nen phai tu tao-->
+<!--trong progress bar thiet lap setmax : 100-->
+<!--Thuộc tính visibility làm thanh progress bar ẩn đi( vẫn chiếm k gian - có thể dùng hàm ViewOn để ẩn đi )-->
+
+
+    <!--Tạo Luồng-->
+<!--Là một đoạn chương trình chạy độc lập song song với chương trình của mình-->
+<!--Để bao bọc đoạn mã dùng Runable : có phương thức Run để bao bọc-->
+<!--Luồng không phải luồng chính gọi là BackGround-->
+<!--Hàm B1 : Tạo ra 1 đối tượng ms Runable và các câu lệnh cần thực hiện-->
+         <!--DoSomeLongWork()-->
+<!--B2 : Chạy đoạn lệnh vừa viết : Run(), dùng Thread để tạo luồng ( gọi trên đối tượng vừa tạo  và bắt đầu start để thực hiện )-->
+     <!--Runable : chỉ chứa đoạn mã muốn chạy, muốn chạy dùng Thread để chạy ngầm ở dưới -->
+     <!--Trong lập trình android chỉ có Start mà không có pause hay stop-->
+     <!--RunOnUiThread() gửi đoạn mã lệnh lên trên luồng chính để chạy -->
+<!--Bài tập : -->
+<!--Tạo thư mục res/raw và thêm file âm thanh : a.mp3 và play file âm thanh -->
+<!--Dùng lớp MediaPlayer ( tạo ra ) R.raw.a và kết hợp vs thanh progress bar , dùng hàm position và chiều dài file âm thanh dùng getlength rồi kêt hợp -->
+<!--Dùng icon để play và pause âm thanh -->
+<!--Thay thread bang AsyncTask thứ vị hơn rất nhiều -->

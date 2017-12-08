@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+        <TabWidget android:id="@android:id/tabs" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_height="match_parent" android:layout_width="match_parent">
+            <ListView android:id="@+id/restaurants" android:layout_height="match_parent" android:layout_width="match_parent"/>
+            <TableLayout android:id="@+id/details" android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingTop="4dip" android:shrinkColumns="1" android:stretchColumns="1"
+                android:background="#FF8"
+                android:layout_marginTop="30dp">
+                <TableRow>
+                    <TextView android:text="Name:"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#F4F"/>
+                    <EditText android:id="@+id/name"
+                        android:textColor="#F4F"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Address:"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#F4F"/>
+                    <EditText android:id="@+id/addr"
+                        android:textColor="#F4F"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Type:"
+                        android:textColor="#F4F"
+                        android:layout_marginLeft="7dp"/>
+                    <RadioGroup android:id="@+id/types">
+                        <RadioButton android:id="@+id/take_out" android:text="Take-Out" android:checked="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/sit_down" android:text="Sit-Down"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/delivery" android:text="Delivery"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                    </RadioGroup>
+                    <TextView android:text="Sale:"
+                        android:textColor="#F4F"
+                        android:layout_marginRight="7dp"/>
+                    <RadioGroup android:id="@+id/sales">
+                        <RadioButton android:id="@+id/no"
+                            android:text="Discount 0%"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/giam20"
+                            android:text="Discount 20%"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                        <RadioButton android:id="@+id/giam50"
+                            android:text="Discount 50%"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" />
+                    </RadioGroup>
+                </TableRow>
+                <Button
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:textStyle="bold"
+                    android:textSize="10pt"
+                    android:textColor="#F23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/thongke"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+                <TableRow>
+                    <TextView
+                        android:text="Sum Restaurants"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#07F"/>
+                    <TextView android:id="@+id/sum"
+                        android:textColor="#07F"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Type Restaurants"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="80dp"
+                        android:textColor="#07F"/>
+                    <TextView android:text="Sum"
+                        android:textColor="#07F"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Sit_Down"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/sit"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Take_Out"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/take"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Delivery"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/deli"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Information Discount"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#07F"/>
+                    <TextView android:text="Sum"
+                        android:textColor="#07F"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Discount 0%"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/giam0"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Discount 20%"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/giam_20"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Discount 50%"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"/>
+                    <TextView android:id="@+id/giam_50"
+                        android:textColor="#000"
+                        android:layout_marginLeft="20dp"/>
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.thesecondapp.MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Name : "
+                android:background="#989"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/name"
+                android:hint="Nhap ten nha hang"
+                android:inputType="text"
+                android:background="#6789"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Addres : "
+                android:background="#9D89"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/add"
+                android:hint="Nhap dia chi"
+                android:inputType="text"
+                android:background="#3342"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Type : "
+               android:textColor="#6D7"/>
+            <RadioGroup
+                android:id="@+id/types">
+                <RadioButton
+                    android:id="@+id/sit_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sit_down"
+                    />
+                <RadioButton
+                    android:id="@+id/take_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take_out"
+                    />
+                <RadioButton
+                    android:id="@+id/delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    />
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Sale : "
+                android:textColor="#45D"/>
+            <RadioGroup
+                android:id="@+id/sales">
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No_Discount"
+                    />
+                <RadioButton
+                    android:id="@+id/giam20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount 20%"
+                    />
+                <RadioButton
+                    android:id="@+id/giam50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount 50%"
+                    />
+            </RadioGroup>
+
+        </TableRow>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6E42"
+            android:text="SAVE"/>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

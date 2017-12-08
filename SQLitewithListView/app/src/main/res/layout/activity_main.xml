@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.sqlitewithlistview.MainActivity">
+
+       <ScrollView
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+               <TableLayout
+                   android:id="@+id/table"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   >
+                   <TableRow>
+                       <TextView
+                           android:layout_marginTop="30dp"
+                           android:layout_marginLeft="20dp"
+                           android:text="Tên Mặt Hàng"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content"
+                           />
+                       <TextView
+                           android:layout_marginTop="30dp"
+                           android:layout_marginLeft="10dp"
+                           android:text="Số Lượng"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content"
+                           />
+                       <TextView
+                           android:layout_marginTop="30dp"
+                           android:layout_marginLeft="10dp"
+                           android:text="Giá Sản Phẩm"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content"
+                           />
+                   </TableRow>
+               </TableLayout>
+               <ListView
+                   android:id="@+id/list_item"
+                   android:layout_below="@+id/table"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"></ListView>
+           </RelativeLayout>
+       </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

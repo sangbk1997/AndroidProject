@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.soudpooldemo.MainActivity">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical">
+       <Button
+           android:id="@+id/button1"
+           android:text="Gun"
+           android:layout_marginTop="50dp"
+           android:layout_gravity="center"
+           android:onClick="PlaySoundGun"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <Button
+           android:id="@+id/button2"
+           android:text="Ring"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center"
+           android:onClick="PlaySoundRing"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

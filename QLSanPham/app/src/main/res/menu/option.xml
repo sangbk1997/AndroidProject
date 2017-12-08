@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/add"
+        android:title="AddItem"
+        android:id="@+id/add"
+        android:showAsAction="always"
+        ></item>
+    <item android:icon="@mipmap/remove"
+        android:title="Remove"
+        android:id="@+id/remove"
+        android:showAsAction="always"
+        ></item>
+    <item android:icon="@drawable/sapxep"
+        android:title="Remove"
+        android:id="@+id/sort"
+        android:showAsAction="always"
+        ></item>
+</menu>

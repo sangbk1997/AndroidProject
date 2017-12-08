@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/start"
+        android:title="Start"
+        />
+    <item android:id="@+id/pause"
+        android:title="Pause"
+        />
+    <item android:id="@+id/fastter"
+        android:title="doFaster"/>
+    <item android:title="doRewind"
+        android:id="@+id/rewind"/>
+    <item android:id="@+id/stop"
+        android:title="Stop"/>
+</menu>

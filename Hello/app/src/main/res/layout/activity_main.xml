@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.hello.MainActivity">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:weightSum="100">
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="0dp"
+           android:layout_weight="50"
+           android:orientation="vertical">]
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="25"
+               android:background="#568"
+               android:text="A"/>
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="25"
+               android:background="#9678"
+               android:text="B"/>
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="25"
+               android:background="#588"
+               android:text="C"/>
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="25"
+               android:background="#000"
+               android:text="D"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="0dp"
+           android:layout_weight="50"
+           android:orientation="horizontal">
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="fill_parent"
+               android:layout_weight="25"
+               android:background="#1134"
+               android:text="A"/>
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="fill_parent"
+               android:layout_weight="25"
+               android:background="#999"
+               android:text="B"/>
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="fill_parent"
+               android:layout_weight="25"
+               android:background="#1278"
+               android:text="C"/>
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="fill_parent"
+               android:layout_weight="25"
+               android:background="#578"
+               android:text="D"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

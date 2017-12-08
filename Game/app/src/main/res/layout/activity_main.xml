@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.game.MainActivity">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:progress="0" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball_green"
+            android:layout_weight="1"
+            android:tag="green"
+            />
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball_yellow"
+            android:layout_weight="1"
+            android:tag="yellow"
+            />
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ball_red"
+            android:layout_weight="1"
+            android:tag="red"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Time : 100 ms "
+        android:id="@+id/time"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Time :"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:id="@+id/time2"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Điểm số :"
+        android:textColor="#F00"
+        android:layout_marginTop="30dp"
+        android:id="@+id/time3"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F65"
+            android:text=" Your color : green , yellow, red ---> "
+            android:layout_marginTop="30dp"
+
+            />
+        <EditText
+            android:id="@+id/text"
+            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:id="@+id/play"
+           android:textColor="#F28"
+           android:text="New Game"
+           android:layout_marginLeft="90dp"
+           android:onClick="playGame"/>
+
+       <Button
+           android:id="@+id/finish"
+           android:textColor="#F28"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:onClick="finshGame"
+           android:text="Finish" />
+
+   </LinearLayout>
+    <TextView
+        android:text="Author :Nguyễn Bình Sang "
+        android:textStyle="bold"
+        android:textColor="#499"
+        android:textSize="30px"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

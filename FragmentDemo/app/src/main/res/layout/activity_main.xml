@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.fragmentdemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.sangbk.fragmentdemo.TopFagment"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.sangbk.fragmentdemo.BottomFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.gameikariam.Confi_TownHall">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Loại nhà TownHall "
+                    android:textColor="#F34"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#F34"
+                    android:id="@+id/level"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Loại Quân "
+                    android:textColor="#124"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Số Lượng"
+                    android:textColor="#124"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hoplite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Hoplite"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Hop"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/steam_giant"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Steam Giant"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_StreamGiant"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/swordsman"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Swordsman"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Swordsman"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spearmen"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Spearman"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Spearman"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/sulphur_carabineer"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sulphur Carabineer"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Sul"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/archer"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Archer"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Archer"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/slinger"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Slinger"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Slinger"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mortar"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Mortar"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Mortar"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/catapult"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Catapult"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Catapult"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ram"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Ram"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Ram"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/balloon_bombardier"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Balloon_Bombardier"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Balloon"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gyrocopter"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Gyrocopter"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Gyrocopter"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cook"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Cook"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Cook"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/doctor"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Doctor"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Doctor"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/barbarian_axe_swinger"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Barbarian_Axe Swinger"
+                        android:textColor="#780"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/count_Barbarian_Axe"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textColor="#234"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textColor="#234"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
