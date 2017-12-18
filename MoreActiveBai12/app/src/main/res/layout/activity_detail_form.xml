@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.moreactivebai12.DetailForm">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:textSize="40px"
+            android:text="Thong tin nha hang"
+            android:textColor="#e71bb8"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout android:id="@+id/details" android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingTop="4dip" android:shrinkColumns="1" android:stretchColumns="1"
+            android:background="#f4f4e1"
+            android:layout_marginTop="30dp"
+            >
+            <TableRow>
+                <TextView android:text="Name:"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#F4F"/>
+                <EditText android:id="@+id/name"
+                    android:textColor="#F4F"
+                    android:layout_span="2"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Address:"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#F4F"/>
+                <EditText android:id="@+id/addr"
+                    android:textColor="#F4F"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Type:"
+                    android:textColor="#F4F"
+                    android:layout_marginLeft="7dp"/>
+                <RadioGroup android:id="@+id/types">
+                    <RadioButton android:id="@+id/take_out" android:text="Take-Out" android:checked="true"
+                        android:textColor="#4b57c2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <RadioButton android:id="@+id/sit_down" android:text="Sit-Down"
+                        android:textColor="#4b57c2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <RadioButton android:id="@+id/delivery" android:text="Delivery"
+                        android:textColor="#4b57c2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Notes : "
+                    android:textColor="#4b57c2"
+                    android:layout_margin="5dp"
+                    />
+                <EditText
+                    android:id="@+id/notes"
+                    android:textColor="#4b57c2"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:maxWidth="500dp"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:textStyle="bold"
+                    android:textSize="10pt"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:textColor="#F23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

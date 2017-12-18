@@ -38,14 +38,14 @@ public class MySQLHelper extends SQLiteOpenHelper {
         getWritableDatabase().update("listRestaurant", cv, "_id=?",
                 args);
     }
-    public void delete(String name){
-        String []args={name};
-        getWritableDatabase().delete("listRestaurant","name=?",args);
+    public void delete(int id){
+        String []args={String.valueOf(id)};
+        getWritableDatabase().delete("listRestaurant","_id=?",args);
     }
     public Cursor getById(String id) {
         String[] args={id};
         return(getReadableDatabase()
-                .rawQuery("SELECT _id, name, count, cost FROM listRestaurant where _id=?",args));
+                .rawQuery("SELECT _id, name, count, cost FROM listRestaurant where _id='?'",args));
     }
     public Cursor getAll(){
         return getReadableDatabase().rawQuery("SELECT * FROM listRestaurant ORDER BY name",null);

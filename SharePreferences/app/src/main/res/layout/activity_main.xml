@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sangbk.sharepreferences.MainActivity">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical">
+       <TextView
+           android:textColor="#2c1c87"
+           android:text="Nguyễn Bình Sang"
+           android:textSize="30px"
+           android:layout_margin="50dp"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="#2c1c87"
+           android:text="Demo SharePreference"
+           android:textSize="30px"
+           android:layout_margin="5dp"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:text="Sound : "
+           android:layout_margin="20dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <SeekBar
+           android:id="@+id/seekbar1"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <SeekBar
+           android:id="@+id/seekbar2"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:text="Brightness : "
+           android:layout_margin="20dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:text="Difficulty Level"
+           android:layout_margin="20dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+       <RadioGroup
+           android:id="@+id/radiogroup"
+           android:gravity="center"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <RadioButton
+               android:id="@+id/easy"
+               android:text="Easy"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <RadioButton
+               android:id="@+id/mediun"
+               android:text="Medium"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <RadioButton
+               android:id="@+id/hard"
+               android:text="Hard"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RadioGroup>
+       <Button
+           android:id="@+id/button"
+           android:text="Save"
+           android:onClick="doSave"
+           android:textSize="30dp"
+           android:textColor="#a41eb9"
+           android:layout_margin="20dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+</android.support.constraint.ConstraintLayout>

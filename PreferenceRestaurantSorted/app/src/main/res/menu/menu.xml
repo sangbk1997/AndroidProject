@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/add"
+        android:showAsAction="always"
+        ></item>
+    <item android:title="Sort"
+        android:id="@+id/sort"
+        android:icon="@drawable/setting"
+        android:showAsAction="always"
+        />
+</menu>
